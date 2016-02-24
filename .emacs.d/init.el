@@ -4,3 +4,4 @@
 (require 'my-python)
 (require 'my-shell)
 (require 'my-org-mode)
+(require 'my-local)

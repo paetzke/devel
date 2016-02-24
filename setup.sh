@@ -28,6 +28,9 @@ main() {
     # Configure emacs
     mkdir -p ~/.emacs.d/
     cp -r .emacs.d/* ~/.emacs.d/
+    if [ ! -f ~/.emacs.d/my-config/my-local.el ]; then
+        cp ~/.emacs.d/my-config/my-local.l ~/.emacs.d/my-config/my-local.el
+    fi
 }
 
 main

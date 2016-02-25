@@ -31,6 +31,15 @@ main() {
     if [ ! -f ~/.emacs.d/my-config/my-local.el ]; then
         cp ~/.emacs.d/my-config/my-local.l ~/.emacs.d/my-config/my-local.el
     fi
+
+    # Configure git
+    git config --global alias.co "checkout"
+    git config --global alias.df "diff --patience"
+    git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    git config --global alias.mn "merge --no-ff"
+    git config --global core.editor "emacs -nw"
+    git config --global user.email "f.paetzke@gmail.com"
+    git config --global user.name "Friedrich Paetzke"
 }
 
 main

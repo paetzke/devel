@@ -6,15 +6,17 @@
 (package-initialize)
 
 (defvar prelude-packages
-  '(format-sql
+  '(
+    atom-dark-theme
     fish-mode
-    yaml-mode
+    format-sql
+    graphviz-dot-mode
+    json-reformat
+    markdown-mode
     py-autopep8
     py-isort
     py-yapf
-    json-reformat
-    atom-dark-theme
-    markdown-mode
+    yaml-mode
     ))
 
 (defun prelude-packages-installed-p ()

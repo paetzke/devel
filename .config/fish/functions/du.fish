@@ -1,3 +1,3 @@
 function du
-        eval (which du) -h -s
+        eval (which du) -h -s $argv
 end

@@ -34,6 +34,10 @@ main() {
 
     # Configure git
     git config --global alias.co "checkout"
+
+    git config --global alias.in "!git init && git commit -m 'Initial commit' --allow-empty"
+
+
     git config --global alias.df "diff --patience"
     git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     git config --global alias.mn "merge --no-ff"

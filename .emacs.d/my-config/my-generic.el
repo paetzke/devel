@@ -10,7 +10,7 @@
 (setq-default indent-tabs-mode nil)
 (tool-bar-mode -1)
 
-(load-theme 'atom-dark t)
+(load-theme 'misterioso t)
 
 
 

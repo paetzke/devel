@@ -1,0 +1,11 @@
+[alias]
+	co = checkout
+	in = !git init && git commit -m 'Initial commit' --allow-empty
+	df = diff --patience
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	mn = merge --no-ff
+[core]
+	editor = emacs
+[user]
+	email = f.paetzke@gmail.com
+	name = Friedrich Paetzke

@@ -1,7 +1,0 @@
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/my-config"))
-(require 'my-packages)
-(require 'my-generic)
-(require 'my-python)
-(require 'my-shell)
-(require 'my-org-mode)
-(require 'my-local)

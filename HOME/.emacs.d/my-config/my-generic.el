@@ -10,12 +10,12 @@
 (setq-default indent-tabs-mode nil)
 (tool-bar-mode -1)
 
-(load-theme 'misterioso t)
+(load-theme 'atom-dark t)
 
 
 
 (custom-set-faces
- '(default ((t (:family "Source Code Pro" :height 100)))))
+ '(default ((t (:height 110)))))
 
 
 (setq inhibit-startup-message t)
@@ -25,6 +25,12 @@
 ;; Prevent the annoying beep on errors
 
 (setq ring-bell-function 'ignore)
+
+
+
+(when (eq system-type 'darwin) ;; mac specific settings
+  (setq mac-option-key-is-meta t)
+  (setq mac-right-option-modifier nil))
 
 
 (provide 'my-generic)

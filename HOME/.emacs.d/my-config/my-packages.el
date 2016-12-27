@@ -15,7 +15,7 @@
     markdown-mode
     py-autopep8
     py-isort
-    py-yapf
+;    py-yapf
     yaml-mode
     ))
 

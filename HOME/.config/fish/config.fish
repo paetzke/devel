@@ -1,11 +1,3 @@
-set -gx PYENV_ROOT $HOME/.pyenv
-set -gx PATH $PYENV_ROOT/shims $PATH
-set -gx PATH $PYENV_ROOT/bin $PATH
-set -gx PATH /usr/local/bin $PATH
-
-
-eval (python -m virtualfish)
-set -gx VIRTUALFISH_HOME ~/pyvenvs
-
-
+eval (python3 -m virtualfish)
+set -gx VIRTUALFISH_HOME ~/python/ve
 set -gx PATH $HOME/bin $PATH

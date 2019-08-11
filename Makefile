@@ -6,9 +6,5 @@ compile:  ## Compile.
 	./compile.sh
 
 
-diff:  ## Diff.
-	./diff.sh
-
-
 install: compile  ## Install.
-	./setup
+	./install.sh

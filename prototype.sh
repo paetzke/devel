@@ -6,21 +6,8 @@ if uname | grep Darwin > /dev/null; then
         brew update
     fi
 
-    brew install bash fish git htop wget
-    brew install Caskroom/cask/mactex
-    brew install emacs --with-cocoa
-
-    if ! grep "/usr/local/bin/fish" /etc/shells; then
-        echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-        chsh -s /usr/local/bin/fish
-    fi
-
-    if [ ! -e ~/.pyenv ]; then
-        git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-    fi
-    ~/.pyenv/bin/pyenv install 3.6.1 --skip-existing
-
-    pip install virtualfish autopep8 isort
+    brew install bash fish git htop wget python3
+    pip3 install virtualfish autopep8 isort
 fi
 
 git config --global alias.co "checkout"

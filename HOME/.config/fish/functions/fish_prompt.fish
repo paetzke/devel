@@ -23,29 +23,12 @@ function fish_prompt
         set_color normal
         printf ']'
 
-        if test -f .keep-until
-                printf " "
-                set_color -b red
-                printf "%s" (cat .keep-until)
-                set_color normal
-        end
-
         printf '%s' (__fish_git_prompt)
         set_color normal
         if [ $last_status = 0 ]
                 set_color green
         else
                 set_color red
-        end
-
-        if test -f .pyvenv
-                if not test $VIRTUAL_ENV
-                        vf activate (cat .pyvenv)
-                end
-        else
-                if test $VIRTUAL_ENV
-                        vf deactivate
-                end
         end
 
         printf '\n'
